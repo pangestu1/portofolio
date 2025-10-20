@@ -368,10 +368,61 @@
         .list-disc { list-style-type: disc; } .list-inside { list-style-position: inside; }
         .overflow-hidden { overflow: hidden; }
 
-        @media (max-width: 767px) {
-            .hero-container h1 { font-size: 2rem; }
-            .hero-container h2 { font-size: 1.2rem; }
+        /* Responsive breakpoints for multi-device support */
+        @media (max-width: 640px) {
+            /* Extra small devices (phones < 640px) */
+            .hero-container {
+                padding: 4rem 1rem;
+            }
+            .hero-container h1 { font-size: 1.75rem; }
+            .hero-container h2 { font-size: 1rem; }
+            .hero-container p { font-size: 0.9rem; }
+            .tech-badge { font-size: 0.75rem; padding: 0.25rem 0.75rem; }
+            .btn-contact { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+            .social-link { gap: 0.75rem; }
+            .social-link i { font-size: 1.5rem; }
+
+            .section-padding { padding: 60px 0; }
+            .container { padding: 0 1rem; }
+            .gap-12 { gap: 2rem; }
+            .gap-8 { gap: 1.5rem; }
+            .gap-6 { gap: 1rem; }
+            .gap-4 { gap: 0.75rem; }
+            .mb-12 { margin-bottom: 2rem; }
+            .mb-8 { margin-bottom: 1.5rem; }
+            .mb-6 { margin-bottom: 1rem; }
+            .px-6 { padding-left: 1rem; padding-right: 1rem; }
+            .py-16 { padding-top: 3rem; padding-bottom: 3rem; }
+
+            .text-4xl { font-size: 2rem; }
+            .text-3xl { font-size: 1.75rem; }
+            .text-2xl { font-size: 1.5rem; }
+            .text-xl { font-size: 1.25rem; }
+            .text-lg { font-size: 1rem; }
+
+            .project-card { padding: 1rem; }
+            .modal-content { padding: 1.5rem; max-width: 90vw; }
+            .modal-gallery img { height: 80px; }
+        }
+
+        @media (min-width: 641px) and (max-width: 767px) {
+            /* Small devices (tablets 641px - 767px) */
+            .hero-container h1 { font-size: 2.5rem; }
+            .hero-container h2 { font-size: 1.25rem; }
             .hero-container p { font-size: 1rem; }
+            .section-padding { padding: 70px 0; }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            /* Medium devices (tablets 768px - 1023px) */
+            .hero-container { padding: 5rem 1.5rem; }
+            .section-padding { padding: 80px 0; }
+            .container { max-width: 100%; padding: 0 2rem; }
+        }
+
+        @media (min-width: 1024px) {
+            /* Large devices (desktops >= 1024px) */
+            .container { max-width: 1200px; }
         }
 
         /* --- NEW STYLES FOR DARK BLUE ICONS AND BUTTONS --- */
